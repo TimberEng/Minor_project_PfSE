@@ -2,3 +2,4 @@ PyNiteFEA
 scipy
 plotly
 IPython
+vtk
