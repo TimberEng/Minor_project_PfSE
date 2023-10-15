@@ -14,6 +14,11 @@ pressure = st.sidebar.number_input("Uniformly distributed wind pressure, Wp (kPa
 Angle = st.sidebar.number_input("Roof angle (deg)", value=10.0, step= 1.0)
 Length = st.sidebar.number_input("Frame spacing (mm)", value=10000.0, step= 100.0)
 
+
+
+
+
+
 frame_model = appmo.build_frame(Column_height,Length, pressure, Angle)
 
 

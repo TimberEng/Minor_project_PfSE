@@ -3,6 +3,8 @@ from PyNite.Visualization import render_model
 from math import sqrt
 from math import tan
 from math import radians
+from Structural_Analysis import analysis
+from eng_module import utils
 
 #############################
 
@@ -107,7 +109,6 @@ def find_max_horizontal(frame_model):
     
     return max(displ_hmax_1, displ_hmax_2, displ_hmax_3, displ_hmax_4, displ_hmin_1, displ_hmin_2, displ_hmin_3, displ_hmin_4)
 
-
 def get_list (frame_model) -> list[list]:
     shear_list = []
     moment_list = []
@@ -128,4 +129,6 @@ def get_nodes(frame_model) -> list:
         Y.append(item.Y)
     return X, Y
 
+section_data = utils.read_csv_file("section.csv")   
 
+analysis.csv_record_to_Isction(section_data[1])
