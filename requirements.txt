@@ -1,3 +1,4 @@
 PyNiteFEA
 streamlit
 plotly
+scipy
