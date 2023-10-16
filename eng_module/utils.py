@@ -1,6 +1,6 @@
 import csv
 
-def str_to_float (s: float|str) -> float|str:
+def str_to_float (s):
     """
     Returns a float or string from a numeric string
     """
@@ -10,7 +10,7 @@ def str_to_float (s: float|str) -> float|str:
     except ValueError:
         return s
     
-def str_to_int (s: str) -> int|str:
+def str_to_int (s):
     """
     The function should convert a numeric string to an integer.
     """
