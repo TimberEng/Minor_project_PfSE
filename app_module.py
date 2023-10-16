@@ -1,5 +1,4 @@
 from PyNite import FEModel3D
-from PyNite.Visualization import render_model
 from math import sqrt
 from math import tan
 from math import radians
