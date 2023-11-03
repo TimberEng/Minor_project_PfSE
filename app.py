@@ -51,6 +51,9 @@ for i_node, j_node in edges:
     Frame_fig.add_trace(trace)
 Frame_fig.layout.height=600
 Frame_fig.layout.width=800
+Frame_fig.update_layout(annotations = [x = 0.5,
+                                       y = -0.1
+                                       ])
 Frame_fig
 
 
